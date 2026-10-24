@@ -13,8 +13,8 @@
 
 | Phase | Description | Tasks | Completed | Status |
 |---|---|:---:|:---:|:---:|
-| **Phase 0** | Project Setup, Tooling & Theme Foundation | 5 | 0 | `[ ] Pending` |
-| **Phase 1** | Storage Layer & Data Models | 5 | 0 | `[ ] Pending` |
+| **Phase 0** | Project Setup, Tooling & Theme Foundation | 5 | 5 | `[x] Completed` |
+| **Phase 1** | Storage Layer & Data Models | 5 | 0 | `[-] In Progress` |
 | **Phase 2** | Notification Interceptor & Rule Engine | 6 | 0 | `[ ] Pending` |
 | **Phase 3** | Alarm Foreground Service, Audio & Haptics | 6 | 0 | `[ ] Pending` |
 | **Phase 4** | Lock Screen Alarm Activity & Visuals | 5 | 0 | `[ ] Pending` |
@@ -28,15 +28,15 @@
 ## 2. Granular Task Breakdown
 
 ### Phase 0: Project Setup, Tooling & Theme Foundation
-- [ ] **TASK-001**: Initialize Android project with Gradle Kotlin DSL (`build.gradle.kts`), configuring `minSdk = 26`, `targetSdk = 35`, `compileSdk = 35`.
+- [x] **TASK-001**: Initialize Android project with Gradle Kotlin DSL (`build.gradle.kts`), configuring `minSdk = 26`, `targetSdk = 35`, `compileSdk = 35`.
   - *Files:* `build.gradle.kts`, `app/build.gradle.kts`, `gradle/libs.versions.toml`
-- [ ] **TASK-002**: Exclude internet permissions completely from `AndroidManifest.xml` to ensure zero network capability.
+- [x] **TASK-002**: Exclude internet permissions completely from `AndroidManifest.xml` to ensure zero network capability.
   - *Files:* `app/src/main/AndroidManifest.xml`
-- [ ] **TASK-003**: Configure dependencies: Compose Material 3, Navigation Compose, Room KSP, DataStore Preferences, Coroutines.
+- [x] **TASK-003**: Configure dependencies: Compose Material 3, Navigation Compose, Room KSP, DataStore Preferences, Coroutines.
   - *Files:* `app/build.gradle.kts`
-- [ ] **TASK-004**: Implement design system color palette from prototype (`#0E1220`, `#171C30`, `#FFB020`, `#3DDC97`, `#9AA3BA`, `#2A2410`).
+- [x] **TASK-004**: Implement design system color palette from prototype (`#0E1220`, `#171C30`, `#FFB020`, `#3DDC97`, `#9AA3BA`, `#2A2410`).
   - *Files:* `app/src/main/java/com/nightbell/app/ui/theme/Color.kt`, `Theme.kt`
-- [ ] **TASK-005**: Configure Inter typography scales and Material 3 theme wrapper (`NightBellTheme`).
+- [x] **TASK-005**: Configure Inter typography scales and Material 3 theme wrapper (`NightBellTheme`).
   - *Files:* `app/src/main/java/com/nightbell/app/ui/theme/Type.kt`
 
 ---
