@@ -4,10 +4,64 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
+
+    <!-- Sound waves left -->
     <path
-        android:fillColor="#0E1220"
-        android:pathData="M0,0h108v108h-108z"/>
+        android:strokeColor="#FFB020"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M30,46 A32,32 0 0,0 30,62" />
+    <path
+        android:strokeColor="#FFB020"
+        android:strokeWidth="1.8"
+        android:strokeAlpha="0.5"
+        android:strokeLineCap="round"
+        android:pathData="M24,41 A42,42 0 0,0 24,67" />
+
+    <!-- Sound waves right -->
+    <path
+        android:strokeColor="#FFB020"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M78,46 A32,32 0 0,1 78,62" />
+    <path
+        android:strokeColor="#FFB020"
+        android:strokeWidth="1.8"
+        android:strokeAlpha="0.5"
+        android:strokeLineCap="round"
+        android:pathData="M84,41 A42,42 0 0,1 84,67" />
+
+    <!-- Crescent Moon Motif -->
+    <path
+        android:fillColor="#2A3352"
+        android:fillAlpha="0.6"
+        android:pathData="M59,32 A14,14 0 1,0 71,51 A17,17 0 0,1 59,32 Z" />
+
+    <!-- Bell Top Loop -->
+    <path
+        android:strokeColor="#FFB020"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M50,34 C50,29 58,29 58,34" />
+
+    <!-- Bell Clapper -->
+    <path
+        android:fillColor="#FFA000"
+        android:pathData="M54,75m-6,0a6,6 0 1,1 12,0a6,6 0 1,1 -12,0" />
+
+    <!-- Main Bell Body -->
     <path
         android:fillColor="#FFB020"
-        android:pathData="M54,32c-7.73,0 -14,6.27 -14,14v16l-4,6h36l-4,-6V46C68,38.27 61.73,32 54,32zM48,72c0,3.31 2.69,6 6,6s6,-2.69 6,-6H48z"/>
+        android:pathData="M54,34 C44,34 39,46 39,60 C39,68 37,71 33,73 C33,75 35,76 38,76 L70,76 C73,76 75,75 75,73 C71,71 69,68 69,60 C69,46 64,34 54,34 Z" />
+
+    <!-- Specular Highlight -->
+    <path
+        android:fillColor="#FFE082"
+        android:fillAlpha="0.75"
+        android:pathData="M54,36 C46,36 43,47 43,59 C43,66 41,70 38,72 C40,71 45,65 45,58 C45,44 49,36 54,36 Z" />
+
+    <!-- Little Night Sparkle Star -->
+    <path
+        android:fillColor="#FFE082"
+        android:pathData="M73,31 Q73,34 76,34 Q73,34 73,37 Q73,34 70,34 Q73,34 73,31 Z" />
 </vector>
