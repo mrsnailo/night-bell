@@ -24,6 +24,8 @@ android {
             storePassword = "nightbell123"
             keyAlias = "nightbell"
             keyPassword = "nightbell123"
+            enableV1Signing = true
+            enableV2Signing = true
         }
     }
 
