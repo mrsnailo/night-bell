@@ -20,8 +20,8 @@
 | **Phase 4** | Lock Screen Alarm Activity & Visuals | 5 | 5 | `[x] Completed` |
 | **Phase 5** | Primary App Screens (Home, Rules, History) | 6 | 6 | `[x] Completed` |
 | **Phase 6** | Setup Checklist, Battery & OEM Hardening | 5 | 5 | `[x] Completed` |
-| **Phase 7** | End-to-End Acceptance Testing & Device Run | 6 | 0 | `[-] In Progress` |
-| **Total** | **All Phases** | **44** | **0** | **0%** |
+| **Phase 7** | End-to-End Acceptance Testing & Device Run | 6 | 6 | `[x] Completed` |
+| **Total** | **All Phases** | **44** | **44** | **100%** |
 
 ---
 
@@ -138,12 +138,12 @@
 ---
 
 ### Phase 7: End-to-End Acceptance Testing & Device Run
-- [ ] **TASK-701**: Test Acceptance Case 1: Phone on silent & DND, screen locked -> Fiverr message triggers alarm within 3 seconds.
-- [ ] **TASK-702**: Test Acceptance Case 2: Promotional/marketing notification from Fiverr/Upwork is ignored.
-- [ ] **TASK-703**: Test Acceptance Case 3: Outside quiet hours window -> no alarm triggered.
-- [ ] **TASK-704**: Test Acceptance Case 4: Dismissing notification in Fiverr app terminates alarm immediately.
-- [ ] **TASK-705**: Test Acceptance Case 5: Ignored alarm times out at 2 minutes and repeats after 5 minutes.
-- [ ] **TASK-706**: Test Acceptance Case 6: Device reboot verification (listener survives and functions without opening app).
+- [x] **TASK-701**: Test Acceptance Case 1: Phone on silent & DND, screen locked -> Fiverr message triggers alarm within 3 seconds.
+- [x] **TASK-702**: Test Acceptance Case 2: Promotional/marketing notification from Fiverr/Upwork is ignored.
+- [x] **TASK-703**: Test Acceptance Case 3: Outside quiet hours window -> no alarm triggered.
+- [x] **TASK-704**: Test Acceptance Case 4: Dismissing notification in Fiverr app terminates alarm immediately.
+- [x] **TASK-705**: Test Acceptance Case 5: Ignored alarm times out at 2 minutes and repeats after 5 minutes.
+- [x] **TASK-706**: Test Acceptance Case 6: Device reboot verification (listener survives and functions without opening app).
 
 ---
 
