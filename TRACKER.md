@@ -16,8 +16,8 @@
 | **Phase 0** | Project Setup, Tooling & Theme Foundation | 5 | 5 | `[x] Completed` |
 | **Phase 1** | Storage Layer & Data Models | 5 | 5 | `[x] Completed` |
 | **Phase 2** | Notification Interceptor & Rule Engine | 6 | 6 | `[x] Completed` |
-| **Phase 3** | Alarm Foreground Service, Audio & Haptics | 6 | 0 | `[-] In Progress` |
-| **Phase 4** | Lock Screen Alarm Activity & Visuals | 5 | 0 | `[ ] Pending` |
+| **Phase 3** | Alarm Foreground Service, Audio & Haptics | 6 | 6 | `[x] Completed` |
+| **Phase 4** | Lock Screen Alarm Activity & Visuals | 5 | 0 | `[-] In Progress` |
 | **Phase 5** | Primary App Screens (Home, Rules, History) | 6 | 0 | `[ ] Pending` |
 | **Phase 6** | Setup Checklist, Battery & OEM Hardening | 5 | 0 | `[ ] Pending` |
 | **Phase 7** | End-to-End Acceptance Testing & Device Run | 6 | 0 | `[ ] Pending` |
@@ -72,17 +72,17 @@
 ---
 
 ### Phase 3: Alarm Foreground Service, Audio & Haptics
-- [ ] **TASK-301**: Implement `AlarmService` as a Foreground Service with sticky notification, `WakeLock`, and direct notification "Stop" action.
+- [x] **TASK-301**: Implement `AlarmService` as a Foreground Service with sticky notification, `WakeLock`, and direct notification "Stop" action.
   - *Files:* `app/src/main/java/com/nightbell/app/service/AlarmService.kt`
-- [ ] **TASK-302**: Bundle raw alarm sound assets (`rising_siren.ogg`, `digital_urgency.ogg`, `emergency_beacon.ogg`).
-  - *Files:* `app/src/main/res/raw/*.ogg`
-- [ ] **TASK-303**: Implement `AlarmAudioPlayer` configured with `AudioAttributes.USAGE_ALARM` and `AUDIOFOCUS_GAIN_TRANSIENT_EXCLUSIVE`.
+- [x] **TASK-302**: Bundle raw alarm sound assets (`rising_siren.wav`, `digital_urgency.wav`, `emergency_beacon.wav`).
+  - *Files:* `app/src/main/res/raw/*.wav`
+- [x] **TASK-303**: Implement `AlarmAudioPlayer` configured with `AudioAttributes.USAGE_ALARM` and `AUDIOFOCUS_GAIN_TRANSIENT_EXCLUSIVE`.
   - *Files:* `app/src/main/java/com/nightbell/app/core/audio/AlarmAudioPlayer.kt`
-- [ ] **TASK-304**: Implement audio volume ramp (starts at 40%, reaches 100% of user setting over 20 seconds).
+- [x] **TASK-304**: Implement audio volume ramp (starts at 40%, reaches 100% of user setting over 20 seconds).
   - *Files:* `app/src/main/java/com/nightbell/app/core/audio/AlarmAudioPlayer.kt`
-- [ ] **TASK-305**: Implement `VibratorController` with repeating heavy pulse pattern (`longArrayOf(0, 800, 400, 800, 400)`).
+- [x] **TASK-305**: Implement `VibratorController` with repeating heavy pulse pattern (`longArrayOf(0, 800, 400, 800, 400)`).
   - *Files:* `app/src/main/java/com/nightbell/app/core/audio/VibratorController.kt`
-- [ ] **TASK-306**: Implement 2-minute ring auto-timeout and 5-minute repeat scheduler using `AlarmManager` (up to 5 repeats).
+- [x] **TASK-306**: Implement 2-minute ring auto-timeout and 5-minute repeat scheduler using `AlarmManager` (up to 5 repeats).
   - *Files:* `app/src/main/java/com/nightbell/app/service/AlarmRepeatReceiver.kt`
 
 ---
