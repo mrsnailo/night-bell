@@ -18,8 +18,8 @@
 | **Phase 2** | Notification Interceptor & Rule Engine | 6 | 6 | `[x] Completed` |
 | **Phase 3** | Alarm Foreground Service, Audio & Haptics | 6 | 6 | `[x] Completed` |
 | **Phase 4** | Lock Screen Alarm Activity & Visuals | 5 | 5 | `[x] Completed` |
-| **Phase 5** | Primary App Screens (Home, Rules, History) | 6 | 0 | `[-] In Progress` |
-| **Phase 6** | Setup Checklist, Battery & OEM Hardening | 5 | 0 | `[ ] Pending` |
+| **Phase 5** | Primary App Screens (Home, Rules, History) | 6 | 6 | `[x] Completed` |
+| **Phase 6** | Setup Checklist, Battery & OEM Hardening | 5 | 0 | `[-] In Progress` |
 | **Phase 7** | End-to-End Acceptance Testing & Device Run | 6 | 0 | `[ ] Pending` |
 | **Total** | **All Phases** | **44** | **0** | **0%** |
 
@@ -102,9 +102,9 @@
 ---
 
 ### Phase 5: Primary App Screens (Home, Rules, History)
-- [ ] **TASK-501**: Build `NightBellBottomBar` navigation component (Home, Rules, History) with active indicator `#FFB020`.
+- [x] **TASK-501**: Build `NightBellBottomBar` navigation component (Home, Rules, History) with active indicator `#FFB020`.
   - *Files:* `app/src/main/java/com/nightbell/app/ui/components/NightBellBottomBar.kt`
-- [ ] **TASK-502**: Build `HomeScreen`:
+- [x] **TASK-502**: Build `HomeScreen`:
   - Big status card with 96x96 bell badge, "Listening" / "Paused".
   - Schedule status caption ("Alarm is on until 8:00 AM").
   - Health status indicator ("Last notification seen 12 min ago" `#3DDC97`).
@@ -112,13 +112,13 @@
   - "LAST ALARM" card with sender, time, and stop duration.
   - Full-width "Test alarm" button with countdown trigger.
   - *Files:* `app/src/main/java/com/nightbell/app/ui/screens/home/HomeScreen.kt`, `HomeViewModel.kt`
-- [ ] **TASK-503**: Build `RulesScreen` header and app selector tabs (Fiverr | Upwork).
+- [x] **TASK-503**: Build `RulesScreen` header and app selector tabs (Fiverr | Upwork).
   - *Files:* `app/src/main/java/com/nightbell/app/ui/screens/rules/RulesScreen.kt`
-- [ ] **TASK-504**: Build Rules toggle card ("Enabled", "Messages only", "Only in quiet hours").
+- [x] **TASK-504**: Build Rules toggle card ("Enabled", "Messages only", "Only in quiet hours").
   - *Files:* `app/src/main/java/com/nightbell/app/ui/screens/rules/RulesScreen.kt`
-- [ ] **TASK-505**: Build "IGNORE WORDS" interactive chip group with delete action and dashed "Add word" dialog.
-  - *Files:* `app/src/main/java/com/nightbell/app/ui/screens/rules/RulesScreen.kt`, `Components.kt`
-- [ ] **TASK-506**: Build "ALARM SOUND" settings card (tone picker, 85% volume slider, repeat configuration) and `HistoryScreen` with filter chips (All, Fiverr, Upwork).
+- [x] **TASK-505**: Build "IGNORE WORDS" interactive chip group with delete action and dashed "Add word" dialog.
+  - *Files:* `app/src/main/java/com/nightbell/app/ui/screens/rules/RulesScreen.kt`
+- [x] **TASK-506**: Build "ALARM SOUND" settings card (tone picker, 85% volume slider, repeat configuration) and `HistoryScreen` with filter chips (All, Fiverr, Upwork).
   - *Files:* `app/src/main/java/com/nightbell/app/ui/screens/history/HistoryScreen.kt`, `HistoryViewModel.kt`
 
 ---
