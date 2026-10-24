@@ -14,8 +14,8 @@
 | Phase | Description | Tasks | Completed | Status |
 |---|---|:---:|:---:|:---:|
 | **Phase 0** | Project Setup, Tooling & Theme Foundation | 5 | 5 | `[x] Completed` |
-| **Phase 1** | Storage Layer & Data Models | 5 | 0 | `[-] In Progress` |
-| **Phase 2** | Notification Interceptor & Rule Engine | 6 | 0 | `[ ] Pending` |
+| **Phase 1** | Storage Layer & Data Models | 5 | 5 | `[x] Completed` |
+| **Phase 2** | Notification Interceptor & Rule Engine | 6 | 0 | `[-] In Progress` |
 | **Phase 3** | Alarm Foreground Service, Audio & Haptics | 6 | 0 | `[ ] Pending` |
 | **Phase 4** | Lock Screen Alarm Activity & Visuals | 5 | 0 | `[ ] Pending` |
 | **Phase 5** | Primary App Screens (Home, Rules, History) | 6 | 0 | `[ ] Pending` |
@@ -42,15 +42,15 @@
 ---
 
 ### Phase 1: Storage Layer & Data Models
-- [ ] **TASK-101**: Define domain models: `AppRule`, `Schedule`, `AlarmSettings`, `AlarmRecord`.
+- [x] **TASK-101**: Define domain models: `AppRule`, `Schedule`, `AlarmSettings`, `AlarmRecord`.
   - *Files:* `app/src/main/java/com/nightbell/app/domain/model/*.kt`
-- [ ] **TASK-102**: Implement `SettingsDataStore` with serializers for App Rules (Fiverr/Upwork enabled, message-only, keyword chips).
+- [x] **TASK-102**: Implement `SettingsDataStore` with serializers for App Rules (Fiverr/Upwork enabled, message-only, keyword chips).
   - *Files:* `app/src/main/java/com/nightbell/app/data/datastore/SettingsDataStore.kt`
-- [ ] **TASK-103**: Implement `Schedule` persistence in DataStore (start/end minutes, days, 8-hour override timestamp).
+- [x] **TASK-103**: Implement `Schedule` persistence in DataStore (start/end minutes, days, 8-hour override timestamp).
   - *Files:* `app/src/main/java/com/nightbell/app/data/datastore/SettingsDataStore.kt`
-- [ ] **TASK-104**: Implement Room Database (`NightBellDatabase`) with `AlarmEventEntity` and `AlarmEventDao`.
-  - *Files:* `app/src/main/java/com/nightbell/app/core/database/entity/AlarmEventEntity.kt`, `dao/AlarmEventDao.kt`
-- [ ] **TASK-105**: Implement `AlarmHistoryRepository` and unit tests for database insertion, query filtering, and duration tracking.
+- [x] **TASK-104**: Implement Room/SQLite Database (`NightBellDatabase`) with `AlarmEventEntity` and queries.
+  - *Files:* `app/src/main/java/com/nightbell/app/core/database/NightBellDatabase.kt`
+- [x] **TASK-105**: Implement `AlarmHistoryRepository` and unit tests for database insertion, query filtering, and duration tracking.
   - *Files:* `app/src/main/java/com/nightbell/app/data/repository/AlarmHistoryRepository.kt`
 
 ---

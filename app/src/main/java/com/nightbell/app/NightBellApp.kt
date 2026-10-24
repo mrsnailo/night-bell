@@ -5,12 +5,34 @@ import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
 import android.os.Build
+import com.nightbell.app.core.database.NightBellDatabase
+import com.nightbell.app.data.datastore.SettingsDataStore
+import com.nightbell.app.data.repository.AlarmHistoryRepository
+import com.nightbell.app.data.repository.HealthRepository
 
 class NightBellApp : Application() {
+
+    lateinit var settingsDataStore: SettingsDataStore
+        private set
+
+    lateinit var database: NightBellDatabase
+        private set
+
+    lateinit var alarmHistoryRepository: AlarmHistoryRepository
+        private set
+
+    lateinit var healthRepository: HealthRepository
+        private set
 
     override fun onCreate() {
         super.onCreate()
         instance = this
+
+        settingsDataStore = SettingsDataStore(this)
+        database = NightBellDatabase(this)
+        alarmHistoryRepository = AlarmHistoryRepository(database)
+        healthRepository = HealthRepository(settingsDataStore)
+
         createNotificationChannels()
     }
 
@@ -22,7 +44,7 @@ class NightBellApp : Application() {
                 NotificationManager.IMPORTANCE_HIGH
             ).apply {
                 description = "Foreground alerts and persistent ringing notifications"
-                setSound(null, null) // Custom sound handled by AlarmAudioPlayer
+                setSound(null, null)
                 enableVibration(true)
             }
 
