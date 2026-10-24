@@ -19,8 +19,8 @@
 | **Phase 3** | Alarm Foreground Service, Audio & Haptics | 6 | 6 | `[x] Completed` |
 | **Phase 4** | Lock Screen Alarm Activity & Visuals | 5 | 5 | `[x] Completed` |
 | **Phase 5** | Primary App Screens (Home, Rules, History) | 6 | 6 | `[x] Completed` |
-| **Phase 6** | Setup Checklist, Battery & OEM Hardening | 5 | 0 | `[-] In Progress` |
-| **Phase 7** | End-to-End Acceptance Testing & Device Run | 6 | 0 | `[ ] Pending` |
+| **Phase 6** | Setup Checklist, Battery & OEM Hardening | 5 | 5 | `[x] Completed` |
+| **Phase 7** | End-to-End Acceptance Testing & Device Run | 6 | 0 | `[-] In Progress` |
 | **Total** | **All Phases** | **44** | **0** | **0%** |
 
 ---
@@ -124,15 +124,15 @@
 ---
 
 ### Phase 6: Setup Checklist, Battery & OEM Hardening
-- [ ] **TASK-601**: Build `SetupChecklistScreen` displaying real-time permission status with direct system intent buttons.
+- [x] **TASK-601**: Build `SetupChecklistScreen` displaying real-time permission status with direct system intent buttons.
   - *Files:* `app/src/main/java/com/nightbell/app/ui/screens/setup/SetupChecklistScreen.kt`
-- [ ] **TASK-602**: Implement Notification Access checker & launcher (`Settings.ACTION_NOTIFICATION_LISTENER_SETTINGS`).
+- [x] **TASK-602**: Implement Notification Access checker & launcher (`Settings.ACTION_NOTIFICATION_LISTENER_SETTINGS`).
   - *Files:* `app/src/main/java/com/nightbell/app/ui/screens/setup/SetupViewModel.kt`
-- [ ] **TASK-603**: Implement Battery Optimization prompt (`ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS`) for NightBell, Fiverr, and Upwork.
+- [x] **TASK-603**: Implement Battery Optimization prompt (`ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS`) for NightBell, Fiverr, and Upwork.
   - *Files:* `app/src/main/java/com/nightbell/app/ui/screens/setup/SetupViewModel.kt`
-- [ ] **TASK-604**: Implement Android 13+ `POST_NOTIFICATIONS` and Android 14+ `USE_FULL_SCREEN_INTENT` permission handlers.
+- [x] **TASK-604**: Implement Android 13+ `POST_NOTIFICATIONS` and Android 14+ `USE_FULL_SCREEN_INTENT` permission handlers.
   - *Files:* `app/src/main/java/com/nightbell/app/ui/screens/setup/SetupViewModel.kt`
-- [ ] **TASK-605**: Add OEM-specific guide cards for Xiaomi/HyperOS, Oppo/ColorOS, Vivo, Samsung (Autostart, lock in recents, sleep mode exceptions).
+- [x] **TASK-605**: Add OEM-specific guide cards for Xiaomi/HyperOS, Oppo/ColorOS, Vivo, Samsung (Autostart, lock in recents, sleep mode exceptions).
   - *Files:* `app/src/main/java/com/nightbell/app/ui/screens/setup/SetupChecklistScreen.kt`
 
 ---
