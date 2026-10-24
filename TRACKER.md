@@ -17,8 +17,8 @@
 | **Phase 1** | Storage Layer & Data Models | 5 | 5 | `[x] Completed` |
 | **Phase 2** | Notification Interceptor & Rule Engine | 6 | 6 | `[x] Completed` |
 | **Phase 3** | Alarm Foreground Service, Audio & Haptics | 6 | 6 | `[x] Completed` |
-| **Phase 4** | Lock Screen Alarm Activity & Visuals | 5 | 0 | `[-] In Progress` |
-| **Phase 5** | Primary App Screens (Home, Rules, History) | 6 | 0 | `[ ] Pending` |
+| **Phase 4** | Lock Screen Alarm Activity & Visuals | 5 | 5 | `[x] Completed` |
+| **Phase 5** | Primary App Screens (Home, Rules, History) | 6 | 0 | `[-] In Progress` |
 | **Phase 6** | Setup Checklist, Battery & OEM Hardening | 5 | 0 | `[ ] Pending` |
 | **Phase 7** | End-to-End Acceptance Testing & Device Run | 6 | 0 | `[ ] Pending` |
 | **Total** | **All Phases** | **44** | **0** | **0%** |
@@ -88,15 +88,15 @@
 ---
 
 ### Phase 4: Lock Screen Alarm Activity & Visuals
-- [ ] **TASK-401**: Create `AlarmActivity` with window flags `setShowWhenLocked(true)`, `setTurnScreenOn(true)`, `FLAG_KEEP_SCREEN_ON`.
+- [x] **TASK-401**: Create `AlarmActivity` with window flags `setShowWhenLocked(true)`, `setTurnScreenOn(true)`, `FLAG_KEEP_SCREEN_ON`.
   - *Files:* `app/src/main/java/com/nightbell/app/ui/screens/alarm/AlarmActivity.kt`
-- [ ] **TASK-402**: Implement `AlarmScreen` Compose UI: pulsing concentric amber rings, app badge (`NEW FIVERR MESSAGE`), large digital time (88px).
+- [x] **TASK-402**: Implement `AlarmScreen` Compose UI: pulsing concentric amber rings, app badge (`NEW FIVERR MESSAGE`), large digital time (88px).
   - *Files:* `app/src/main/java/com/nightbell/app/ui/screens/alarm/AlarmScreen.kt`
-- [ ] **TASK-403**: Display client sender name and message preview card inside `#171C30` container.
+- [x] **TASK-403**: Display client sender name and message preview card inside `#171C30` container.
   - *Files:* `app/src/main/java/com/nightbell/app/ui/screens/alarm/AlarmScreen.kt`
-- [ ] **TASK-404**: Implement primary "Open Fiverr" / "Open Upwork" action button: stops alarm and dispatches app launch intent.
+- [x] **TASK-404**: Implement primary "Open Fiverr" / "Open Upwork" action button: stops alarm and dispatches app launch intent.
   - *Files:* `app/src/main/java/com/nightbell/app/ui/screens/alarm/AlarmScreen.kt`
-- [ ] **TASK-405**: Implement secondary "Snooze 5 min" and "Stop" action buttons; record stop duration in `AlarmEventDao`.
+- [x] **TASK-405**: Implement secondary "Snooze 5 min" and "Stop" action buttons; record stop duration in `AlarmEventDao`.
   - *Files:* `app/src/main/java/com/nightbell/app/ui/screens/alarm/AlarmScreen.kt`
 
 ---
