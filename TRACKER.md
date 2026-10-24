@@ -15,8 +15,8 @@
 |---|---|:---:|:---:|:---:|
 | **Phase 0** | Project Setup, Tooling & Theme Foundation | 5 | 5 | `[x] Completed` |
 | **Phase 1** | Storage Layer & Data Models | 5 | 5 | `[x] Completed` |
-| **Phase 2** | Notification Interceptor & Rule Engine | 6 | 0 | `[-] In Progress` |
-| **Phase 3** | Alarm Foreground Service, Audio & Haptics | 6 | 0 | `[ ] Pending` |
+| **Phase 2** | Notification Interceptor & Rule Engine | 6 | 6 | `[x] Completed` |
+| **Phase 3** | Alarm Foreground Service, Audio & Haptics | 6 | 0 | `[-] In Progress` |
 | **Phase 4** | Lock Screen Alarm Activity & Visuals | 5 | 0 | `[ ] Pending` |
 | **Phase 5** | Primary App Screens (Home, Rules, History) | 6 | 0 | `[ ] Pending` |
 | **Phase 6** | Setup Checklist, Battery & OEM Hardening | 5 | 0 | `[ ] Pending` |
@@ -56,17 +56,17 @@
 ---
 
 ### Phase 2: Notification Interceptor & Rule Engine
-- [ ] **TASK-201**: Implement `NightBellNotificationListener` extending `NotificationListenerService`.
+- [x] **TASK-201**: Implement `NightBellNotificationListener` extending `NotificationListenerService`.
   - *Files:* `app/src/main/java/com/nightbell/app/service/NightBellNotificationListener.kt`
-- [ ] **TASK-202**: Implement `HealthRepository` to record `lastSeenNotificationTimestamp` for any notification passing through listener.
+- [x] **TASK-202**: Implement `HealthRepository` to record `lastSeenNotificationTimestamp` for any notification passing through listener.
   - *Files:* `app/src/main/java/com/nightbell/app/data/repository/HealthRepository.kt`
-- [ ] **TASK-203**: Implement `RuleEngine` to match target packages (`com.fiverr.fiverr`, `com.upwork.android.apps.main`), parse extras (`EXTRA_TITLE`, `EXTRA_TEXT`, `EXTRA_BIG_TEXT`), and evaluate block/allow keywords.
+- [x] **TASK-203**: Implement `RuleEngine` to match target packages (`com.fiverr.fiverr`, `com.upwork.android.apps.main`), parse extras (`EXTRA_TITLE`, `EXTRA_TEXT`, `EXTRA_BIG_TEXT`), and evaluate block/allow keywords.
   - *Files:* `app/src/main/java/com/nightbell/app/core/engine/RuleEngine.kt`
-- [ ] **TASK-204**: Implement `ScheduleChecker` to calculate active status including midnight-spanning intervals (e.g. 11:00 PM to 8:00 AM) and active days.
+- [x] **TASK-204**: Implement `ScheduleChecker` to calculate active status including midnight-spanning intervals (e.g. 11:00 PM to 8:00 AM) and active days.
   - *Files:* `app/src/main/java/com/nightbell/app/core/engine/ScheduleChecker.kt`
-- [ ] **TASK-205**: Wire listener auto-rebind via `requestRebind(ComponentName)` on disconnect and on boot completion.
+- [x] **TASK-205**: Wire listener auto-rebind via `requestRebind(ComponentName)` on disconnect and on boot completion.
   - *Files:* `app/src/main/java/com/nightbell/app/service/BootReceiver.kt`
-- [ ] **TASK-206**: Implement remote dismiss detection in `onNotificationRemoved`: cancel active alarm when notification is cleared by original app.
+- [x] **TASK-206**: Implement remote dismiss detection in `onNotificationRemoved`: cancel active alarm when notification is cleared by original app.
   - *Files:* `app/src/main/java/com/nightbell/app/service/NightBellNotificationListener.kt`
 
 ---
